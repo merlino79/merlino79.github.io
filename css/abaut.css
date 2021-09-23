@@ -1,0 +1,164 @@
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+ /* header */
+ 
+ body {
+     min-width: 900px;
+     background-image: linear-gradient(90deg, rgb(30, 30, 30), rgb(29, 28, 28), rgb(29, 29, 28));
+ }
+ 
+ header {
+     position: fixed;
+     top: 0;
+     right: 0;
+     width: 100%;
+     height: 100px;
+     padding: 20px;
+     margin-bottom: 10px;
+     z-index: 1;
+     background-image: linear-gradient(90deg, rgb(23, 23, 23), rgb(31, 29, 29), rgb(29, 29, 28));
+ }
+ 
+ .header-down {
+     min-height: 100px;
+ }
+ 
+ li {
+     list-style: none;
+ }
+ 
+ a {
+     padding-right: 20px;
+     text-decoration: none;
+     color: aliceblue;
+     transition: 2s;
+     font-size: 30px;
+     font-family: 'Crimson Text', serif;
+ }
+ /* fine header */
+ /* main */
+ 
+ .wrap-img {
+     position: relative;
+     width: 100%;
+     height: 90vh;
+     overflow: hidden;
+ }
+ 
+ .box-img {
+     position: absolute;
+     width: 100%;
+     height: 100vh;
+ }
+ 
+ img {
+     min-width: 100%;
+     height: 100%;
+ }
+ 
+ .wrap {
+     display: flex;
+     height: 100%;
+     margin-top: 50px;
+ }
+ 
+ .box-test {
+     width: 50%;
+     height: 100%;
+     padding: 20px;
+     text-align: justify;
+     box-shadow: 1px 2px 3px rgba(233, 86, 86, 0.5);
+     color: #fff;
+     font-family: 'Karla', sans-serif;
+ }
+ 
+ .box-skills {
+     width: 50%;
+     height: 100%;
+     transition: 2s all;
+     /* display: none; */
+ }
+ 
+ .card {
+     background-image: linear-gradient(90deg, rgb(31, 29, 29), rgb(58, 58, 56));
+     color: #fff;
+ }
+ 
+ .col-sm-6 {
+     width: 80%;
+     margin-left: 30px;
+     text-align: center;
+ }
+ 
+ .text-info {
+     color: #df3159 !important;
+     width: 100%;
+ }
+ 
+ .bg-primary {
+     background-color: #db7676b5 !important;
+ }
+ 
+ .reveal {
+     position: relative;
+     transform: translateY(40px);
+     opacity: 0;
+ }
+ 
+ .reveal.active {
+     transform: translateY(0px);
+     transition: 2s;
+     opacity: 1;
+ }
+ 
+ .box-button {
+     width: 50%;
+     display: flex;
+     justify-content: center;
+ }
+ 
+ button {
+     margin-top: 30px;
+ }
+ 
+ .btn {
+     width: 150px;
+     padding: 20px;
+     background-color: black;
+     color: #fff;
+ }
+ 
+ .finish {
+     height: 35vh;
+ }
+ /* fine main */
+ /* media-query */
+ 
+ @media all and (max-width: 841px) {
+     body {
+         min-width: 0;
+         background-image: linear-gradient(90deg, rgb(31, 29, 29), rgb(39, 39, 38));
+     }
+     .wrap {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+     }
+     .wrap-img {
+         width: 100%;
+         height: 70vh;
+     }
+     .box-skills {
+         margin-top: 30px;
+     }
+     .box-button {
+         width: 100%;
+     }
+     .finish {
+         height: 45vh;
+     }
+ }
